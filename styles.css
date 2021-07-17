@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 :root {
     /* for gradient: */
     --light-magenta: hsl(293, 100%, 63%);
@@ -85,14 +85,89 @@ h1 {
     border-radius: 0 0 500px 700px;
 }
 
-.phone {
-    background: gray;
-}
-
 h1 {
     color: var(--very-dark-desturated-violet);
 }
 
 p {
     color: var(--dark-gray-violet);
+}
+
+/* phone style/layout */
+
+.phone {
+    background: var(--white);
+    z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    border-radius: 30px;
+}
+
+.notch {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
+    height: 2rem;
+    width: 55%;
+    z-index: 2;
+    background: var(--white);
+}
+
+.contact {
+    height: 12%;
+    border-radius: 20px 20px 10px 10px;
+    margin: 1rem;
+    background: linear-gradient(254deg, rgba(233,66,240,1) 28%, rgba(136,56,255,1) 79%);
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.3rem;
+}
+
+.next {
+    height: 25%;
+    transform: scaleX(-1);
+}
+
+.avatar {
+    height: 45%;
+    border-radius: 50%;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 50%;
+    width: 40%;
+    margin-left: -2rem;
+    
+}
+
+.name,
+.status {
+    margin: 0;
+    color: var(--white);
+    
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.status {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--pale-violet);
+}
+
+.more {
+    height: 20%;
 }
