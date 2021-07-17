@@ -59,7 +59,7 @@ body {
     margin-left: 2rem;
     z-index: 1;
     width: 380px;
-    height: 640px;
+    height: 720px;
 }
 
 section {
@@ -133,12 +133,13 @@ p {
 .next {
     height: 25%;
     transform: scaleX(-1);
+    margin-left: -0.7rem;
 }
 
 .avatar {
-    height: 45%;
+    height: 50%;
     border-radius: 50%;
-
+    margin-left: -3rem;
 }
 
 .contact-info {
@@ -146,7 +147,7 @@ p {
     flex-flow: column nowrap;
     height: 50%;
     width: 40%;
-    margin-left: -2rem;
+    margin-left: -3rem;
     
 }
 
@@ -159,7 +160,7 @@ p {
 
 .name {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .status {
@@ -170,4 +171,99 @@ p {
 
 .more {
     height: 20%;
+}
+
+.message {
+    font-size: 0.8rem;
+    color: var(--moderate-violet);
+    width: 50%;
+
+}
+
+.message1,
+.message2,
+.message5 {
+    align-self: flex-start;
+    margin-left: 3rem;
+}
+
+.images,
+.message3,
+.message4 {
+    align-self: flex-end;
+    margin-right: 3rem;
+}
+
+.message3,
+.message4 {
+    color: var(--desaturated-dark-violet);
+}
+
+.message4 {
+    text-align: right;
+}
+
+.images {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 55%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.dog {
+    width: 3.8rem;
+    border-radius: 10px;
+
+}
+
+.option {
+    align-self: flex-start;
+    display: flex;
+    width: 70%;
+    background: linear-gradient(100deg, rgba(233,66,240,1) 28%, rgba(136,56,255,1) 79%);
+    border-radius: 20px 20px 20px 10px;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    flex: 10% auto 10%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.option1 {
+    margin-bottom: 0.8rem;
+}
+
+.option-desc {
+    color: var(--white);
+    margin: 0;
+    width: 8rem;
+}
+
+.radio {
+    color: var(--very-light-magenta);
+}
+
+.price {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.write {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 70% 30%;
+    width: 90%;
+    height: 3.5rem;
+}
+.empty {
+    margin: 0 0 0 2rem;
+}
+
+.send {
+    height: 1.5rem;
 }
