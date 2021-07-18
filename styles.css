@@ -134,7 +134,7 @@ p {
     height: 2rem;
     width: 55%;
     z-index: 2;
-    background: var(--white);
+    background: var(--light-gray-violet);
 }
 
 .contact {
