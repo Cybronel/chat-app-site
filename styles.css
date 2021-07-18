@@ -39,6 +39,8 @@ body {
     margin: 0;
     border: 0;
     height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
     
     display: flex;
     flex-flow: row nowrap;
@@ -53,6 +55,16 @@ body {
     left: -20%;
     width: 50%;
     height: 90%;
+    z-index: -1;
+}
+
+.bg-shape2 {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    width: 50%;
+    height: 90%;
+    z-index: -1;
 }
 
 .phone {
@@ -84,6 +96,12 @@ h1 {
 .bg-shape {
     background: linear-gradient(184deg, rgba(233,66,240,1) 0%, rgba(136,56,255,1) 100%);
     border-radius: 0 0 500px 700px;
+}
+
+.bg-shape2 {
+    background: var(--gray-blue);
+    border-radius: 700px 500px 0 0;
+    opacity: 0.8;
 }
 
 h1 {
