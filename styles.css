@@ -60,6 +60,7 @@ body {
     z-index: 1;
     width: 380px;
     height: 720px;
+
 }
 
 section {
@@ -96,12 +97,13 @@ p {
 /* phone style/layout */
 
 .phone {
-    background: var(--white);
     z-index: 1;
     display: flex;
     flex-flow: column nowrap;
     position: relative;
     border-radius: 30px;
+    background: var(--light-gray-violet);
+    box-shadow: 6px 14px 22px -11px rgba(0,0,0,0.50);
 }
 
 .notch {
